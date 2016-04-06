@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpost" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">    
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>    
+    </head>
+    <body>
+        <div class="container">
+
+            <nav class="navbar navbar-default navbar-fixed-top" style="background-color:black; opacity : 0.75;">
+              <div class="container container-fluid ">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#home" data-toggle="collapse" data-target=".navbar-collapse" style="color : #FFF;">HOME </a></li>
+                    <li><a href="#portfolio" data-toggle="collapse" data-target=".navbar-collapse" style="color : #FFF;">PORTFOLIO</a></li>
+                    <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse" style="color : #FFF;">ABOUT ME</a></li>
+                    <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse" style="color : #FFF;">CONTACT</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <div class="row" id="home">
+                <div class="col-md-6">
+                    <img class="img-responsive title-logo" src="images/me.jpg">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="title-super text-thin">Sourabh Maheshwari</h1>
+                    <h3>Front-end Ninja</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="http://placekitten.com/g/1140/350" alt="main kitten image">
+                </div>
+            </div>
+
+            <hr>
+            <div id="portfolio">  
+              <div class="row">
+                  <div class="col-md-12">
+                      <h2 class="text-muted ">
+                        Featured Work</h2>
+                  </div>
+              </div>
+              <div class="row text-center">
+                  <div class="col-md-6">
+                      <img class="img-responsive" src="images/viewresume.png" data-toggle="modal" data-target="#project1">
+                      <h3>Resume Uploading Portal</h3>
+                      <p><a href="https://github.com/sousnake/resume-uploading-portal">Link to project</a></p>
+                  </div>
+                  <div class="col-md-6">
+                      <img class="img-responsive" src="images/carregistration.png" data-toggle="modal" data-target="#project2">
+                      <h3>Cab Booking Service</h3>
+                      <p><a href="https://github.com/sousnake/cab-booking-service">Link to project</a></p>
+                  </div>
+                  <div class="col-md-6">
+                      <img class="img-responsive" src="images/stack.png" data-toggle="modal" data-target="#project3">
+                      <h3>Stack Machine Simulator</h3>
+                      <p><a href="https://github.com/sousnake/stack-machine-simulator">Link to project</a></p>
+                  </div>
+                  <div class="col-md-6">
+                      <img class="img-responsive" src="images/resume.png" data-toggle="modal" data-target="#project4">
+                      <h3>Resume</h3>
+                      <p><a href="http://sousnake.github.io/">Link to project</a></p>
+                  </div>
+              </div>
+            </div>  
+            <hr>  
+
+            <div id="about">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h2 class="text-muted">About Me</h2>
+                  </div>
+              </div>  
+              <div class="row text-center">
+                  <div class="col-md-6">
+                      <img class="img-responsive" src="images/skills.png" data-toggle="modal" data-target="#skillSet">
+                      <h3>Skill Set</h3>
+                  </div>
+                  <div class="col-md-6">
+                      <h3 style="padding-top:50px;">Introduction</h3>
+                        <p>My name is Sourabh Maheshwari, and I’m young web designer/software developer based in Bangalore, India with about 2 years of experience in field of Software Development. Fascinated by web technologes, my current endeavor is to build dynamic and responsive websites to add to my portfolio. I'm very passionate about programming and curious to know more about newer technologie.My hobbies are playing computer games (CS 1.6, CS GO), listening music and doing card tricks.</p>
+                  </div>
+              </div>
+            </div>  
+            <hr>  
+            <div id="contact">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h2 class="text-muted text-uppercase">Contact</h2>
+                  </div>
+              </div>  
+              <div class="row">
+                  <div class="col-md-6">
+                      <h4 class="text-center text-uppercase">Send Message</h4>
+                      <div>
+
+                        <form class="form-horizontal" style="font-style:italic" role="form"
+                        action="MAILTO:sousnake@gmail.com">
+                          <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-8">
+                              <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-8"> 
+                              <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-8"> 
+                              <textarea class="form-control" id="message" placeholder="Enter Message"></textarea>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <div class="col-sm-offset-5 col-sm-10">
+                              <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                  </div>
+                  <div class="col-md-6 text-center">
+                      <div>
+                        <h4 class="text-center text-uppercase">Contact Info</h4>
+                        <p>Phone : +91 7568245457</p>
+                        <p>Email : sousnake@gmail.com</p>
+                      </div>
+                      <br>
+                      <div>
+                        <h4 class="text-center text-uppercase">Social Networks</h4>
+                        <p>Feel free to add me on social networks.</p>
+                        <a href="https://www.facebook.com/SourabhMaheshwari21">
+                          <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png" width="50" height="50" />
+                        </a>
+                        <a href="https://in.linkedin.com/in/sourabh-maheshwari-b4278661">
+                          <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png" width="50" height="50" />
+                        </a>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+            <hr> 
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Resume Uploading Portal</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/viewresume.png">
+                <ul>
+                  <li>
+                    A SPC portal managing students resume. Students can register on site and upload their resume as excel file with format specified on website or can fill it via online form.Students can update their resume anytime as well as upload their image.
+                  </li> 
+                  <li>
+                    Site maintains student files in a dynamic folder created at time of uploading. Also admin can login and can view students resume.
+                  </li>
+                  <li>
+                    It uses phpexcel to retreive information from excel and update excel as well. JavaScript/JQuery used for validation and CSS used for styles and backend is in PHP.
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Cab Booking Service</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/carregistration.png">
+                <ul>
+                  <li>
+                    The cab booking service is a service providing application which help user book available cabs.The cab provider register his cars and maintain their details whereas users can also maintain their account and all services history. 
+                  </li>
+                  <li>
+                    It is a standalone Java Application. The details are maintained in database implemented by SQL. 
+                  </li>
+                  <li>
+                    Also new car registration and new user registration can be done, the current can be reset. It also calculate the optimum path for reaching the destination and tell custmor that the car is availible or not, and if it is availible how much time it will take and cost of service.
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Stack Machine Simulator</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/stack.png">
+                <ul>
+                  <li>
+                    A Stack Machine is a real or emulated computer which uses pushdown stack to evaluate each sub-expression in the program. 
+                    It is programmed with a reverse Polish notation instruction set.
+                  </li>
+                  <li>
+                    A Java Program (using Java Swing), simulating the interpretation of code written in assembly language having instructions: push, pop, add, sub, multiply, div, display. It reads program line by line and displays fetch and execution cycle.
+                  </li>
+                  <li>
+                    It works on concept of stack pointer. For push the pointer value must be atleast two and for pop atleast one. For pop operation, it decreases stack pointer by one popping out value. In push operation it take two items performs operation 
+                    and put result back in stack thus increasing stack pointer by one.
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Resume</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/resume.png">
+                <ul>
+                  <li>
+                    This is my resume webpage. It shows my experience as a software developer and web developer and all the projects which I have completed. It has links to my directories for my projects.
+                  </li>
+                  <li>
+                    It is build using HTML, CSS and Javascript, using JQuery as Javascript library. It also uses some features like googleMap just for adding some enhancements (fun).
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="skillSet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Skills</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/skills.png">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
