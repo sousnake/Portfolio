@@ -3,13 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpost" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio</title>
         <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css">    
-        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>    
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+        <!-- <script type="text/javascript" src = "js/all.js"></script> -->
     </head>
     <body>
         <div class="container">
@@ -48,7 +47,13 @@
             <hr>
             <div class="row">
                 <div class="col-md-12">
-                    <img class="img-responsive" src="http://www.wamasoftware.com/upload/web-design-wama-software.jpg" alt="main kitten image">
+                    <!--<img class="img-responsive" src="images/main.jpg" alt="main web image">-->
+					<picture>
+						<source media="(max-width: 500px)" srcset="images/main_small.jpg" />
+						<source media="(min-width: 800px)" srcset="images/main-1600_large_2x.jpg 2x, images/main-800_large_1x.jpg 1x" />
+						<source srcset="images/main_medium.jpg" />
+						<img class="img-responsive fit-to-box" src="images/main_medium.jpg" alt="main web image" style="width: 100%;">
+					</picture>
                 </div>
             </div>
 
@@ -62,24 +67,21 @@
               </div>
               <div class="row text-center">
                   <div class="col-md-6">
-                      <img class="img-responsive" src="images/viewresume.png" data-toggle="modal" data-target="#project1">
-                      <h3>Resume Uploading Portal</h3>
-                      <p><a href="https://github.com/sousnake/resume-uploading-portal">Link to project</a></p>
+                      <img class="img-responsive fit-to-box" src="images/viewresume.png" data-toggle="modal" data-target="#project1">
+                      <h3><p><a href="https://github.com/sousnake/resume-uploading-portal">Resume Uploading Portal</a></p></h3>
                   </div>
                   <div class="col-md-6">
-                      <img class="img-responsive" src="images/carregistration.png" data-toggle="modal" data-target="#project2">
-                      <h3>Cab Booking Service</h3>
-                      <p><a href="https://github.com/sousnake/cab-booking-service">Link to project</a></p>
+                      <img class="img-responsive fit-to-box" src="images/carregistration.png" data-toggle="modal" data-target="#project2">
+                      <h3><p><a href="https://github.com/sousnake/cab-booking-service">Cab Booking Service</a></p></h3>
                   </div>
                   <div class="col-md-6">
-                      <img class="img-responsive" src="images/stack.png" data-toggle="modal" data-target="#project3">
-                      <h3>Stack Machine Simulator</h3>
-                      <p><a href="https://github.com/sousnake/stack-machine-simulator">Link to project</a></p>
+                      <img class="img-responsive fit-to-box" src="images/stack.png" data-toggle="modal" data-target="#project3">
+                      <h3><p><a href="https://github.com/sousnake/stack-machine-simulator">Stack Machine Simulator</a></p></h3>
                   </div>
                   <div class="col-md-6">
-                      <img class="img-responsive" src="images/resume.png" data-toggle="modal" data-target="#project4">
-                      <h3>Resume</h3>
-                      <p><a href="http://sousnake.github.io/">Link to project</a></p>
+                      <img class="img-responsive fit-to-box" src="images/resume.png" data-toggle="modal" data-target="#project4">
+                      <h3><p><a href="http://sousnake.github.io/">Resume</a></p></h3>
+                      
                   </div>
               </div>
             </div>  
@@ -93,7 +95,7 @@
               </div>  
               <div class="row text-center">
                   <div class="col-md-6">
-                      <img class="img-responsive" src="images/skills.png" data-toggle="modal" data-target="#skillSet">
+                      <img class="img-responsive fit-to-box" src="images/skills.png" data-toggle="modal" data-target="#skillSet">
                       <h3>Skill Set</h3>
                   </div>
                   <div class="col-md-6">
@@ -287,4 +289,6 @@
           </div>
         </div>
     </body>
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </html>

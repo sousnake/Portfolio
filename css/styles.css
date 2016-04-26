@@ -1,21 +1,33 @@
-body{
-	font-family: 'Lato', sans-serif;
-	color: #747704;
-	font-weight: 300;
+body {
+  font-family: 'Lato', sans-serif;
+  color: #747704;
+  font-weight: 300; 
+  font-size: 16px;
+  line-height: 1.2em;}
+h3{
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
-.text-muted{
-	color: #BCBBBB;
-}
-.text-thin{
-	font-weight: 100; 
-}
-.title-super{
-	font-size: 45px;
+.fit-to-box{
+	width: 100%;
 }
 
-.title-logo{
-	margin-top: 20px;
+.text-muted {
+  color: #BCBBBB; 
 }
-#home,#about,#portfolio,#contact{
-	padding-top: 50px;
+
+.text-thin {
+  font-weight: 100; 
+}
+
+.title-super {
+  font-size: 45px; 
+}
+
+.title-logo {
+  margin-top: 20px; 
+}
+
+#home, #about, #portfolio, #contact {
+  padding-top: 50px;
 }
